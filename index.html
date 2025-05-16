@@ -34,14 +34,24 @@
       max-width: 1200px;
       margin: auto;
       padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
     }
 
     .product {
       background-color: #1A1A2E;
       border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
+      padding: 1rem;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
     }
 
     .product h2 {
@@ -51,7 +61,27 @@
 
     .product p {
       color: #E0E0E0;
-      margin: 0;
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #FFD700;
+      margin-bottom: 1rem;
+    }
+
+    .order-button {
+      background-color: #D4AF37;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .order-button:hover {
+      background-color: #b9912c;
     }
 
     footer {
@@ -71,18 +101,27 @@
 
   <div class="container">
     <div class="product">
+      <img src="https://via.placeholder.com/300x400?text=Chanel+No+5" alt="Chanel No. 5">
       <h2>Chanel No. 5</h2>
-      <p>Klasičan parfem bezvremenske elegancije. Idealno za večernje prilike.</p>
+      <p>Bezvremenska elegancija za posebne trenutke.</p>
+      <p class="price">150 KM</p>
+      <button class="order-button">Naruči</button>
     </div>
 
     <div class="product">
+      <img src="https://via.placeholder.com/300x400?text=Dior+Sauvage" alt="Dior Sauvage">
       <h2>Dior Sauvage</h2>
-      <p>Snažan i moderan miris za muškarce. Karakter i svježina u jednom.</p>
+      <p>Moderan i snažan miris za muškarce.</p>
+      <p class="price">180 KM</p>
+      <button class="order-button">Naruči</button>
     </div>
 
     <div class="product">
-      <h2>Yves Saint Laurent – Black Opium</h2>
-      <p>Zavodljiv parfem sa notama vanilije i kave. Noćna elegancija.</p>
+      <img src="https://via.placeholder.com/300x400?text=Black+Opium" alt="Black Opium">
+      <h2>Black Opium</h2>
+      <p>Zavodljiv miris s notama kave i vanilije.</p>
+      <p class="price">165 KM</p>
+      <button class="order-button">Naruči</button>
     </div>
   </div>
 
